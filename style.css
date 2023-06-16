@@ -79,6 +79,7 @@ p {
 
 h1 {
   text-align: center;
+  justify-content: center;
   margin-bottom: 30px;
   font-size: 36px;
   font-family: 'Montserrat', sans-serif;
@@ -164,7 +165,7 @@ button:active {
   transition: all 0.15s ease;
   filter: invert(1);
 }
-
+ 
 .icon-button:hover {
   filter: invert(0.576);
 }
@@ -180,33 +181,35 @@ button:active {
 }
 
 /* Generator Container */
-.generator-container {
-  flex-grow: 1;
+.box-container,
+.box-container-left,
+.box-container-right {
   margin: 10px;
-  padding: 24px;
+  width: 90% auto;
+  padding: 20px;
   border: none;
   border-radius: 5px;
-  font-size: 14px;
-  text-align: center;
-  width: 40%;
+  flex-grow: 1;
   background-color: #2a2a2a;
+  justify-content: space-between;
   box-shadow: 0px 10px 5px -5px rgba(0,0,0,0.2);
+}
+
+.box-container {
+  text-align: center;
+}
+
+.box-container-left {
+  margin-left: 10%;
+  text-align: left;
+}
+
+.box-container-right {
+  margin-right: 10%;
+  text-align: right;
 }
 
 /* Results Container */
-.results-container {
-  flex-grow: 1;
-  margin: 10px;
-  padding: 24px;
-  border: none;
-  border-radius: 5px;
-  font-size: 14px;
-  text-align: center;
-  width: 60%;
-  background-color: #2a2a2a;
-  box-shadow: 0px 10px 5px -5px rgba(0,0,0,0.2);
-}
-
 .results {
   margin-top: 30px;
 }
@@ -342,36 +345,11 @@ textarea {
   display: block;
 }
 
-.about-container {
-  max-width: 70%;
+.centered-container {
+  max-width: 80%;
   margin: 20px auto;
   padding: 20px;
-  text-align: left;
-}
-
-.about-container-left {
-  max-width: 800px;
-  margin: 20px auto;
-  margin-left: 5%;
-  padding: 20px;
-  background-color: #2a2a2a;
-  font-size: 14px;
-  border: none;
-  border-radius: 5px;
-  box-shadow: 0px 10px 5px -5px rgba(0,0,0,0.2);
-}
-
-.about-container-right {
-  max-width: 800px;
-  margin: 20px auto;
-  margin-right: 5%;
-  padding: 20px;
-  background-color: #2a2a2a;
-  font-size: 14px;
-  border: none;
-  border-radius: 5px;
-  text-align: right;
-  box-shadow: 0px 10px 5px -5px rgba(0,0,0,0.2);
+  text-align: center;
 }
 
 /* Hero Section */
@@ -508,6 +486,10 @@ textarea {
 ::-webkit-scrollbar-thumb {
   background: #555555;
   border-radius: 10px;
+}
+
+iframe {
+  box-shadow: 0px 10px 5px -5px rgba(0,0,0,0.2);
 }
 
 
