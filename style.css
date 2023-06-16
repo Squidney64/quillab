@@ -1,10 +1,6 @@
-/* Reset */
-body {
-  margin: 0;
-}
-
 /* Global Styles */
 body {
+  margin: 0;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   justify-content: center;
   align-items: center;
@@ -18,7 +14,7 @@ body {
 .site-header {
   background-color: #2a2a2a;
   padding: 20px;
-  box-shadow: 0px 5px 8px rgba(0,0,0,0.2);
+  box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.2);
 }
 
 .site-header h1 {
@@ -70,63 +66,61 @@ body {
   margin-bottom: 20px;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  color: #ffffff;
+  transition: color 0.15s ease;
+}
+
 h1 {
   text-align: center;
   margin-bottom: 30px;
-  transition: color 0.3s ease;
-  /* Unique style for h1 */
-  color: #ffffff;
   font-size: 36px;
   font-family: 'Montserrat', sans-serif;
 }
 
 h2 {
   /* Unique style for h2 */
-  color: #ffffff;
   font-size: 28px;
   font-family: 'Open Sans', sans-serif;
-  transition: color 0.3s ease;
 }
 
 h3 {
   /* Unique style for h3 */
-  color: #ffffff;
   font-size: 24px;
   font-family: 'Roboto', sans-serif;
-  transition: color 0.3s ease;
 }
 
 h4 {
   /* Unique style for h4 */
-  color: #ffffff;
   font-size: 20px;
   font-family: 'Lato', sans-serif;
-  transition: color 0.3s ease;
 }
 
 h5 {
   /* Unique style for h5 */
-  color: #ffffff;
   font-size: 16px;
   font-family: 'Poppins', sans-serif;
-  transition: color 0.3s ease;
 }
 
 h6 {
   /* Unique style for h6 */
-  color: #ffffff;
   font-size: 14px;
   font-family: 'Nunito', sans-serif;
-  transition: color 0.3s ease;
 }
 
 p {
   padding: 5px;
-  transition: color 0.3s ease;
-  /* Add your additional styles for paragraphs here */
 }
 
 /* Buttons */
+.button-link,
+.large-button-link,
 button {
   font-size: 14px;
   padding: 10px 20px;
@@ -135,36 +129,44 @@ button {
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
-  box-shadow: 0px 5px 5px rgba(0,0,0,0.2);
+  transition: background-color 0.15s ease;
+  box-shadow: 0px 10px 5px -5px rgba(0,0,0,0.2);
+  text-decoration: none;
 }
 
+.large-button-link {
+  font-size: 18px;
+  padding: 12px 24px;
+}
+
+.button-link:hover,
+.large-button-link:hover,
 button:hover {
   background-color: #666666;
 }
 
+.button-link:focus,
+.large-button-link:focus,
 button:focus {
   outline: none;
 }
 
-.button-link{
-  font-size: 14px;
-  padding: 10px 20px;
-  background-color: #4a4a4a;
-  color: #ffffff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-  box-shadow: 0px 5px 5px rgba(0,0,0,0.2);
+.button-link:active,
+.large-button-link:active,
+button:active {
+  background-color: #333333;
+  box-shadow: inset 0px 0px 5px 1px rgba(0,0,0,0.2);
 }
 
-.button-link:hover {
-  background-color: #666666;
+.icon-button {
+  float: right;
+  width: 28px;
+  transition: all 0.15s ease;
+  filter: invert(1);
 }
 
-.button-link:focus {
-  outline: none;
+.icon-button:hover {
+  filter: invert(0.576);
 }
 
 /* Footer */
@@ -188,7 +190,7 @@ button:focus {
   text-align: center;
   width: 40%;
   background-color: #2a2a2a;
-  box-shadow: 0px 5px 8px rgba(0,0,0,0.3);
+  box-shadow: 0px 10px 5px -5px rgba(0,0,0,0.2);
 }
 
 /* Results Container */
@@ -202,7 +204,7 @@ button:focus {
   text-align: center;
   width: 60%;
   background-color: #2a2a2a;
-  box-shadow: 0px 5px 8px rgba(0,0,0,0.3);
+  box-shadow: 0px 10px 5px -5px rgba(0,0,0,0.2);
 }
 
 .results {
@@ -225,7 +227,7 @@ button:focus {
 a {
   color: #ffffff;
   text-decoration: none;
-  transition: color 0.3s ease;
+  transition: color 0.15s ease;
 }
 
 .link a {
@@ -309,7 +311,7 @@ textarea {
   position: relative;
   display: inline-block;
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: all 0.15s ease;
 }
 
 .dropdown:hover {
@@ -327,11 +329,11 @@ textarea {
   position: absolute;
   background-color: #4a4a4a;
   min-width: 360px; 
-  box-shadow: 0px 5px 5px rgba(0,0,0,0.2);
+  box-shadow: 0px 10px 5px -5px rgba(0,0,0,0.2);
   padding: 50px;
   z-index: 1;
   font-size: 14px;
-  border: none;
+  border: none; 
   border-radius: 5px;
   cursor: pointer;
 }
@@ -356,7 +358,7 @@ textarea {
   font-size: 14px;
   border: none;
   border-radius: 5px;
-  box-shadow: 0px 5px 8px rgba(0,0,0,0.3);
+  box-shadow: 0px 10px 5px -5px rgba(0,0,0,0.2);
 }
 
 .about-container-right {
@@ -369,7 +371,7 @@ textarea {
   border: none;
   border-radius: 5px;
   text-align: right;
-  box-shadow: 0px 5px 8px rgba(0,0,0,0.3);
+  box-shadow: 0px 10px 5px -5px rgba(0,0,0,0.2);
 }
 
 /* Hero Section */
@@ -391,16 +393,6 @@ textarea {
   margin-bottom: 40px;
 }
 
-.cta-button {
-  display: inline-block;
-  padding: 12px 24px;
-  background-color: #4a4a4a;
-  color: #ffffff;
-  font-size: 18px;
-  text-decoration: none;
-  border-radius: 5px;
-}
-
 /* Feature Section */
 .feature-section {
   display: flex;
@@ -416,7 +408,7 @@ textarea {
   margin: 10px;
   border-radius: 5px;
   background-color: #2a2a2a;
-  box-shadow: 0 5px 7px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 10px 5px -5px rgba(0,0,0,0.2);
   justify-content: space-between;
   cursor: pointer;
 }
@@ -429,7 +421,7 @@ textarea {
 .feature-card h3 {
   font-size: 24px;
   margin-bottom: 20px;
-  transition: all 0.3s;
+  transition: all 0.15s ease;
 }
 
 .feature-card p {
@@ -501,17 +493,6 @@ textarea {
   color: #ffffff;
 }
 
-.newsletter-form button {
-  padding: 10px 20px;
-  background-color: #4a4a4a;
-  color: #ffffff;
-  font-size: 16px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  margin-left: 10px;
-}
-
 /* width */
 ::-webkit-scrollbar {
   width: 10px;
@@ -520,19 +501,13 @@ textarea {
 /* Track */
 ::-webkit-scrollbar-track {
   background: #121212;
-  box-shadow: 0px 5px 5px rgba(0,0,0,0.2);
+  box-shadow: 0px 10px 5px -5px rgba(0,0,0,0.2);
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
   background: #555555;
   border-radius: 10px;
-}
-
-.icon {
-  float: right;
-  width: 28px;
-  filter: invert();
 }
 
 
