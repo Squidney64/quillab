@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Quillab | Character Generator</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="characterGen.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <nav>
+      <ul>
+        <li><a href="index.html"><h1>quillab</h1></a></li>
+        <li class="dropdown" href="generators.html">
+          <summary class="dropbtn">Generators</summary>
+          <div class="dropdown-container">
+            <ul class="dropdown-content">
+                <li><a href="character-generator.html">Character Generator</a></li>
+                <li><a href="character-generator.html">Character Generator</a></li>
+                <li><a href="character-generator.html">Character Generator</a></li>
+                <li><a href="character-generator.html">Character Generator</a></li>
+                <!-- Add more generator links here -->
+            </ul>
+          </div>
+        </li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="container">
+
+    <div class="results-container">
+      <h1 id="resultName">New Character</h1>
+      <div class="result-item">
+        <p id="resultPhysicalTraits"></p>
+      </div>
+      <div class="result-item">
+        <p id="resultPersonalityTraits"></p>
+        <p id="resultBeliefs"></p>
+        <p id="resultFlaws"></p>
+      </div>
+      <div class="result-item">
+        <p id="resultRelationships"></p>
+        <p id="resultOccupation"></p>
+        <p id="resultBackground"></p>
+      </div>
+    </div>
+
+    <div class="generator-container">
+      <h1>Generation Options</h1>
+
+      <div class="category">
+        <button onclick="generateBackground()">Background</button>
+      </div>
+    
+      <h2>General</h2>
+
+      <div class="category">
+        <button onclick="generateName()">Name</button>
+      </div>
+    
+      <div class="category">
+        <button onclick="generatePhysicalTraits()">Physical Traits</button>
+      </div>
+    
+      <h2>Personality</h2>
+    
+      <div class="category">
+        <button onclick="generatePersonalityTraits()">Personality Traits</button>
+      </div>
+    
+      <div class="category">
+        <button onclick="generateBeliefs()">Beliefs</button>
+      </div>
+    
+      <div class="category">
+        <button onclick="generateFlaws()">Flaws</button>
+      </div>
+    
+      <h2>History</h2>
+
+      <div class="category">
+        <button onclick="generateRelationships()">Relationships</button>
+      </div>
+
+      <div class="category">
+        <button onclick="generateOccupation()">Occupation</button>
+      </div>
+
+      <div class="category">
+        <button onclick="generateBackground()">Background</button>
+      </div>
+    </div>
+    
+  </div>
+  <div class="footer">
+    &copy; 2023 Quillab. All rights reserved.
+  </div>
+</body>
+</html>
