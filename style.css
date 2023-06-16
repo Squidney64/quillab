@@ -84,6 +84,7 @@ h2 {
   color: #ffffff;
   font-size: 28px;
   font-family: 'Open Sans', sans-serif;
+  transition: color 0.3s ease;
 }
 
 h3 {
@@ -91,6 +92,7 @@ h3 {
   color: #ffffff;
   font-size: 24px;
   font-family: 'Roboto', sans-serif;
+  transition: color 0.3s ease;
 }
 
 h4 {
@@ -98,6 +100,7 @@ h4 {
   color: #ffffff;
   font-size: 20px;
   font-family: 'Lato', sans-serif;
+  transition: color 0.3s ease;
 }
 
 h5 {
@@ -105,6 +108,7 @@ h5 {
   color: #ffffff;
   font-size: 16px;
   font-family: 'Poppins', sans-serif;
+  transition: color 0.3s ease;
 }
 
 h6 {
@@ -112,10 +116,12 @@ h6 {
   color: #ffffff;
   font-size: 14px;
   font-family: 'Nunito', sans-serif;
+  transition: color 0.3s ease;
 }
 
 p {
   padding: 5px;
+  transition: color 0.3s ease;
   /* Add your additional styles for paragraphs here */
 }
 
@@ -129,6 +135,7 @@ button {
   border-radius: 4px;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  box-shadow: 0px 5px 5px rgba(0,0,0,0.2);
 }
 
 button:hover {
@@ -136,6 +143,26 @@ button:hover {
 }
 
 button:focus {
+  outline: none;
+}
+
+.button-link{
+  font-size: 14px;
+  padding: 10px 20px;
+  background-color: #4a4a4a;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: 0px 5px 5px rgba(0,0,0,0.2);
+}
+
+.button-link:hover {
+  background-color: #666666;
+}
+
+.button-link:focus {
   outline: none;
 }
 
@@ -174,7 +201,6 @@ button:focus {
 .footer {
   font-size: 12px;
   text-align: center;
-  position: relative;
   opacity: 0.5;
   width: 100%;
   margin-top: 20px;
@@ -192,6 +218,7 @@ button:focus {
   text-align: center;
   width: 40%;
   background-color: #1f1f1f;
+  box-shadow: 0px 5px 8px rgba(0,0,0,0.3);
 }
 
 /* Results Container */
@@ -205,6 +232,7 @@ button:focus {
   text-align: center;
   width: 60%;
   background-color: #1f1f1f;
+  box-shadow: 0px 5px 8px rgba(0,0,0,0.3);
 }
 
 .results {
@@ -227,9 +255,15 @@ button:focus {
 a {
   color: #ffffff;
   text-decoration: none;
+  transition: color 0.3s ease;
 }
 
-a:hover {
+.link a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.link a:hover {
   color: #999999;
 }
 
@@ -305,6 +339,7 @@ textarea {
   position: relative;
   display: inline-block;
   cursor: pointer;
+  transition: all 0.3s ease;
 }
 
 .dropdown:hover {
@@ -322,7 +357,7 @@ textarea {
   position: absolute;
   background-color: #4a4a4a;
   min-width: 360px; 
-  box-shadow: 0px 8px 16px s0px rgba(0,0,0,0.2);
+  box-shadow: 0px 5px 5px rgba(0,0,0,0.2);
   padding: 50px;
   z-index: 1;
   font-size: 14px;
@@ -334,6 +369,169 @@ textarea {
 .dropdown:hover .dropdown-container{
   display: block;
 }
+
+.about-container {
+  max-width: 70%;
+  margin: 20px auto;
+  padding: 20px;
+  text-align: left;
+}
+
+.about-container-left {
+  max-width: 800px;
+  margin: 20px auto;
+  margin-left: 5%;
+  padding: 20px;
+  background-color: #1f1f1f;
+  font-size: 14px;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0px 5px 8px rgba(0,0,0,0.3);
+}
+
+.about-container-right {
+  max-width: 800px;
+  margin: 20px auto;
+  margin-right: 5%;
+  padding: 20px;
+  background-color: #1f1f1f;
+  font-size: 14px;
+  border: none;
+  border-radius: 8px;
+  text-align: right;
+  box-shadow: 0px 5px 8px rgba(0,0,0,0.3);
+}
+
+/* Hero Section */
+.hero-section {
+  text-align: center;
+  padding: 80px 0;
+  background-color: #333333;
+  color: #ffffff;
+}
+
+.hero-section h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.hero-section p {
+  font-size: 18px;
+  color: #cccccc;
+  margin-bottom: 40px;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #4a4a4a;
+  color: #ffffff;
+  font-size: 18px;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+/* Feature Section */
+.feature-section {
+  display: flex;
+  justify-content: space-around;
+  padding: 60px 0;
+  background-color: #1f1f1f;
+  color: #ffffff;
+}
+
+.feature-card {
+  text-align: center;
+  padding: 40px;
+  border-radius: 4px;
+  box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1);
+}
+
+.feature-card h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.feature-card p {
+  font-size: 16px;
+  color: #cccccc;
+  margin-bottom: 30px;
+}
+
+/* Testimonial Section */
+.testimonial-section {
+  text-align: center;
+  padding: 80px 0;
+  background-color: #333333;
+  color: #ffffff;
+}
+
+.testimonial-section h2 {
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+
+.testimonial {
+  margin-bottom: 40px;
+}
+
+.testimonial blockquote {
+  font-size: 18px;
+  color: #cccccc;
+  margin-bottom: 20px;
+}
+
+.testimonial cite {
+  font-style: italic;
+  color: #999999;
+}
+
+/* Newsletter Section */
+.newsletter-section {
+  text-align: center;
+  padding: 80px 0;
+  background-color: #1f1f1f;
+  color: #ffffff;
+}
+
+.newsletter-section h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.newsletter-section p {
+  font-size: 18px;
+  color: #cccccc;
+  margin-bottom: 40px;
+}
+
+.newsletter-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 25%;
+}
+
+.newsletter-form input[type="email"] {
+  padding: 10px;
+  font-size: 16px;
+  background-color: #1f1f1f;
+  border: 1px solid #555555;
+  border-radius: 4px;
+  color: #ffffff;
+}
+
+.newsletter-form button {
+  padding: 10px 20px;
+  background-color: #4a4a4a;
+  color: #ffffff;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
 
 /* Additional HTML Elements */
 

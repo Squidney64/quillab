@@ -1,32 +1,78 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Quillab | Character Generator</title>
+  <title>Quillab | Home</title>
   <link rel="stylesheet" href="style.css">
-  <script src="characterGen.js"></script>
 </head>
 <body>
   <header class="site-header">
     <nav>
       <ul>
-        <li><a href="./"><h1>quillab</h1></a></li>
-        <li class="dropdown" href="./generators">
+        <li><a class="link" href="./"><h1>quillab</h1></a></li>
+        <li class="dropdown" class="link" href="./generators">
           <summary class="dropbtn">Generators</summary>
           <div class="dropdown-container">
             <ul class="dropdown-content">
-                <li><a href="./character-generator">Character Generator</a></li>
-                <li><a href="./character-generator">Character Generator</a></li>
-                <li><a href="./character-generator">Character Generator</a></li>
-                <li><a href="./character-generator">Character Generator</a></li>
-                <!-- Add more generator links here -->
+              <li><a class="link" href="./character-generator">Character Generator</a></li>
+              <li><a class="link" href="./character-generator">Character Generator</a></li>
+              <li><a class="link" href="./character-generator">Character Generator</a></li>
+              <li><a class="link" href="./character-generator">Character Generator</a></li>
+              <!-- Add more generator links here -->
             </ul>
           </div>
         </li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a class="link" href="./about">About</a></li>
+        <li><a class="link" href="#">Contact</a></li>
       </ul>
     </nav>
   </header>
+  
+  <div class="content">
+    <section class="hero-section">
+      <h2>Welcome to Quillab</h2>
+      <p>Unleash your creativity with our suite of powerful tools and generators.</p>
+      <a class="cta-button" href="./about">Learn More</a>
+    </section>
+  
+    <section class="feature-section">
+      <div class="feature-card">
+        <h3>Character Generator</h3>
+        <p>Create unique and compelling characters for your stories, role-playing games, and more.</p>
+        <a class="link" href="./character-generator">Get Started</a>
+      </div>
+      <div class="feature-card">
+        <h3>World Builder</h3>
+        <p>Design immersive and intricate worlds for your settings, campaigns, and fictional universes.</p>
+        <a class="link" href="#">Explore Now</a>
+      </div>
+      <div class="feature-card">
+        <h3>Plot Generator</h3>
+        <p>Discover captivating storylines and plot twists to ignite your narrative imagination.</p>
+        <a class="link" href="#">Try it Out</a>
+      </div>
+    </section>
+  
+    <section class="testimonial-section">
+      <h2>What Our Users Say</h2>
+      <div class="testimonial">
+        <blockquote>"Quillab has revolutionized my storytelling process. The character generator helped me breathe life into my protagonists and villains, making my stories more engaging than ever."</blockquote>
+        <cite>John Doe, Author</cite>
+      </div>
+      <div class="testimonial">
+        <blockquote>"As a game master, the world builder tool has been a game-changer for my campaigns. It's incredibly detailed and saves me hours of work. Highly recommended!"</blockquote>
+        <cite>Jane Smith, Game Master</cite>
+      </div>
+    </section>
+  
+    <section class="newsletter-section">
+      <h2>Stay Updated</h2>
+      <p>Subscribe to our newsletter to receive the latest updates, new generator releases, and exclusive offers.</p>
+      <form class="newsletter-form">
+        <input type="email" placeholder="Enter your email" required>
+        <button type="submit">Subscribe</button>
+      </form> 
+    </section>
+  </div>
   
   <div class="footer">
     &copy; 2023 Quillab. All rights reserved.
