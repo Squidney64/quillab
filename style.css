@@ -12,8 +12,15 @@ body {
 
 /* Site Header */
 .site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  height: 50px;
+  z-index: 5;
   background-color: #2a2a2a;
-  padding: 20px;
+  padding: 10px;
   box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.2);
 }
 
@@ -24,13 +31,17 @@ body {
 }
 
 .site-header nav {
-  margin-top: 10px;
+  box-sizing: border-box;
+  display: flex;
+  margin: 0;
+  padding: 0;
 }
 
 .site-header ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  position: relative;
 }
 
 .site-header ul li {
@@ -182,14 +193,13 @@ button:active {
 
 /* Generator Container */
 .box-container,
+.box-container-wide,
 .box-container-left,
 .box-container-right {
   margin: 10px;
-  width: 90% auto;
   padding: 20px;
   border: none;
   border-radius: 5px;
-  flex-grow: 1;
   background-color: #2a2a2a;
   justify-content: space-between;
   box-shadow: 0px 10px 5px -5px rgba(0,0,0,0.2);
@@ -197,14 +207,22 @@ button:active {
 
 .box-container {
   text-align: center;
+  width: 90%;
+}
+
+.box-container-wide {
+  text-align: center;
+  width: 180%;
 }
 
 .box-container-left {
+  width: 90% auto;
   margin-left: 10%;
   text-align: left;
 }
 
 .box-container-right {
+  width: 90% auto;
   margin-right: 10%;
   text-align: right;
 }
