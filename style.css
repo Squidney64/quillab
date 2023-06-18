@@ -31,17 +31,26 @@ body {
 }
 
 .site-header nav {
-  box-sizing: border-box;
+  width: 100%;
   display: flex;
-  margin: 0;
-  padding: 0;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  padding-right: 25px;
 }
 
 .site-header ul {
+  display: inline;
   list-style-type: none;
-  margin: 0;
+  margin: 0 10px;
   padding: 0;
   position: relative;
+}
+
+.header-options-right {
+  display: flex;
+  margin-left: auto;
+  float: right;
 }
 
 .site-header ul li {
@@ -62,15 +71,23 @@ body {
 }
 
 /* Main Content */
-.container {
+.container,
+.centered-container {
   justify-content: center;
   text-align: center;
-  display: flex;
   padding-left: 10%;
   padding-right: 10%;
-  padding-top: 50px;
+  padding-top: 80px;
   padding-bottom: 10px;
   justify-content: space-between;
+}
+
+.container {
+  display: flex;
+}
+
+.centered-container {
+  max-width: 80%;
 }
 
 .category {
@@ -171,7 +188,6 @@ button:active {
 }
 
 .icon-button {
-  float: right;
   width: 28px;
   transition: all 0.15s ease;
   filter: invert(1);
@@ -207,7 +223,6 @@ button:active {
 
 .box-container {
   text-align: center;
-  width: 90%;
 }
 
 .box-container-wide {
@@ -363,17 +378,12 @@ textarea {
   display: block;
 }
 
-.centered-container {
-  max-width: 80%;
-  margin: 20px auto;
-  padding: 20px;
-  text-align: center;
-}
-
 /* Hero Section */
 .hero-section {
   text-align: center;
+  margin: 10px;
   padding: 80px 0;
+  padding-top: 150px;
   background-color: #333333;
   color: #ffffff;
 }
@@ -393,9 +403,10 @@ textarea {
 .feature-section {
   display: flex;
   justify-content: space-around;
-  padding: 60px 10px;
   background-color: #1f1f1f;
   color: #ffffff;
+  margin: 10px 0;
+  padding: 20px 0;
 }
 
 .feature-card {
@@ -429,9 +440,15 @@ textarea {
 /* Testimonial Section */
 .testimonial-section {
   text-align: center;
-  padding: 80px 0;
   background-color: #333333;
   color: #ffffff;
+  margin: 10px;
+  padding: 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #2a2a2a;
+  justify-content: space-between;
+  box-shadow: 0px 10px 5px -5px rgba(0,0,0,0.2);
 }
 
 .testimonial-section h2 {
