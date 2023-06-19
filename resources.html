@@ -54,9 +54,30 @@
       </ul>
     </nav>
     <script>
-      function toggleTheme() {
-        var element = document.body;
+      var element = document.body;
+      
+      if (localStorage.getItem("theme") === "light-mode")
+      {
         element.classList.toggle("light-mode");
+        console.log("Set theme at startup");
+      } else
+      {
+        localStorage.setItem("theme", "dark-mode");
+        console.log("Set Theme to Dark Mode");
+      }
+
+      function toggleTheme() {
+        element.classList.toggle("light-mode");
+
+        if (localStorage.getItem("theme") === "dark-mode")
+        {
+          localStorage.setItem("theme", "light-mode");
+          console.log("Set Theme to Light Mode");
+        } else
+        {
+          localStorage.setItem("theme", "dark-mode");
+          console.log("Set Theme to Dark Mode");
+        }
       }
     </script>
   </header>

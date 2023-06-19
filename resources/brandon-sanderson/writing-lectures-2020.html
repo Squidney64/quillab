@@ -15,10 +15,11 @@
 
         <li><a class="link" href="../../"><h1>quillab</h1></a></li>
 
-        <li class="dropdown" class="link" href="../../generators">
+        <li class="dropdown">
           <summary>Generators ⏷</summary>
           <div class="dropdown-container">
             <ul class="dropdown-content">
+              <li><a class="link" href="../../generators"><b>Generators Home</b></a></li>
               <li><a class="link" href="../../generators/character-generator">Character Generator</a></li>
               <!-- Add more generator links here -->
             </ul>
@@ -29,17 +30,18 @@
           <summary>Tools ⏷</summary>
           <div class="dropdown-container">
             <ul class="dropdown-content">
-              <li><a class="link" href="../../character-generator"></a></li>
+              <li><a class="link" href="../../tools"><b>Tools Home</b></a></li>
               <!-- Add more generator links here -->
             </ul>
           </div>
         </li>
         
-        <li class="dropdown" class="link" href="../../resources">
+        <li class="dropdown">
           <summary>Resources ⏷</summary>
           <div class="dropdown-container">
             <ul class="dropdown-content">
-              <li><a class="link" href="./writing-lectures-2020">Sci-Fi and Fantasy Writing Lectures</a></li>
+              <li><a class="link" href="../../resources"><b>Resources Home</b></a></li>
+              <li><a class="link" href="../../resources/brandon-sanderson/writing-lectures-2020">Sci-Fi and Fantasy Writing Lectures</a></li>
               <!-- Add more generator links here -->
             </ul>
           </div>
@@ -51,9 +53,30 @@
       </ul>
     </nav>
     <script>
-      function toggleTheme() {
-        var element = document.body;
+      var element = document.body;
+      
+      if (localStorage.getItem("theme") === "light-mode")
+      {
         element.classList.toggle("light-mode");
+        console.log("Set theme at startup");
+      } else
+      {
+        localStorage.setItem("theme", "dark-mode");
+        console.log("Set Theme to Dark Mode");
+      }
+
+      function toggleTheme() {
+        element.classList.toggle("light-mode");
+
+        if (localStorage.getItem("theme") === "dark-mode")
+        {
+          localStorage.setItem("theme", "light-mode");
+          console.log("Set Theme to Light Mode");
+        } else
+        {
+          localStorage.setItem("theme", "dark-mode");
+          console.log("Set Theme to Dark Mode");
+        }
       }
     </script>
   </header>
