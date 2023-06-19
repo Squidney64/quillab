@@ -9,55 +9,57 @@
 </head>
 
 <body>
-    <!--HEADER-->
-    <header>
-      <nav>
-        <ul class="header-options-left">
-  
-          <li><a class="link" href="./"><h1>quillab</h1></a></li>
-  
-          <li class="dropdown" class="link" href="./generators">
-            <summary>Generators ⏷</summary>
-            <div class="dropdown-container">
-              <ul class="dropdown-content">
-                <li><a class="link" href="./character-generator">Character Generator</a></li>
-                <!-- Add more generator links here -->
-              </ul>
-            </div>
-          </li>
-          
-          <li class="dropdown" class="link" href="./generators">
-            <summary>Tools ⏷</summary>
-            <div class="dropdown-container">
-              <ul class="dropdown-content">
-                <li><a class="link" href="./character-generator"></a></li>
-                <!-- Add more generator links here -->
-              </ul>
-            </div>
-          </li>
-          
-          <li class="dropdown" class="link" href="./resources">
-            <summary>Resources ⏷</summary>
-            <div class="dropdown-container">
-              <ul class="dropdown-content">
-                <li><a class="link" href="./resources/brandon-sanderson/writing-lectures-2020">Sci-Fi and Fantasy Writing Lectures</a></li>
-                <!-- Add more generator links here -->
-              </ul>
-            </div>
-          </li>
-        </ul>
-        <ul class="header-options-right">
-          <li><a class="link" href="./about">About</a></li>
-          <li><img src="./images/light-mode.png" class="icon-button" onclick="toggleTheme()"></li>
-        </ul>
-      </nav>
-      <script>
-        function toggleTheme() {
-          var element = document.body;
-          element.classList.toggle("light-mode");
-        }
-      </script>
-    </header>
+  <!--HEADER-->
+  <header>
+    <nav>
+      <ul class="header-options-left">
+
+        <li><a class="link" href="./"><h1>quillab</h1></a></li>
+
+        <li class="dropdown">
+          <summary>Generators ⏷</summary>
+          <div class="dropdown-container">
+            <ul class="dropdown-content">
+              <li><a class="link" href="./generators"><b>Generators Home</b></a></li>
+              <li><a class="link" href="./generators/character-generator">Character Generator</a></li>
+              <!-- Add more generator links here -->
+            </ul>
+          </div>
+        </li>
+        
+        <li class="dropdown" class="link" href="./generators">
+          <summary>Tools ⏷</summary>
+          <div class="dropdown-container">
+            <ul class="dropdown-content">
+              <li><a class="link" href="./tools"><b>Tools Home</b></a></li>
+              <!-- Add more generator links here -->
+            </ul>
+          </div>
+        </li>
+        
+        <li class="dropdown">
+          <summary>Resources ⏷</summary>
+          <div class="dropdown-container">
+            <ul class="dropdown-content">
+              <li><a class="link" href="./resources"><b>Resources Home</b></a></li>
+              <li><a class="link" href="./resources/brandon-sanderson/writing-lectures-2020">Sci-Fi and Fantasy Writing Lectures</a></li>
+              <!-- Add more generator links here -->
+            </ul>
+          </div>
+        </li>
+      </ul>
+      <ul class="header-options-right">
+        <li><a class="link" href="./about">About</a></li>
+        <li><img src="./images/light-mode.png" class="icon-button" onclick="toggleTheme()"></li>
+      </ul>
+    </nav>
+    <script>
+      function toggleTheme() {
+        var element = document.body;
+        element.classList.toggle("light-mode");
+      }
+    </script>
+  </header>
   
   <!--BODY-->
   <div class="centered-container">
