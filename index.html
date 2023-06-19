@@ -8,34 +8,53 @@
 </head>
 
 <body>
-  
-  <header class="site-header">
+  <!--HEADER-->
+  <header>
     <nav>
-      <ul>
+      <ul class="header-options-left">
+
         <li><a class="link" href="./"><h1>quillab</h1></a></li>
+
         <li class="dropdown" class="link" href="./generators">
           <summary class="dropbtn">Generators ⏷</summary>
           <div class="dropdown-container">
             <ul class="dropdown-content">
               <li><a class="link" href="./character-generator">Character Generator</a></li>
-              <li><a class="link" href="./character-generator">Character Generator</a></li>
-              <li><a class="link" href="./character-generator">Character Generator</a></li>
-              <li><a class="link" href="./character-generator">Character Generator</a></li>
               <!-- Add more generator links here -->
             </ul>
           </div>
         </li>
-        <li><a class="link" href="./about">About</a></li>
-        <li><a class="link" href="#">Contact</a></li>
+        
+        <li class="dropdown" class="link" href="./generators">
+          <summary class="dropbtn">Tools ⏷</summary>
+          <div class="dropdown-container">
+            <ul class="dropdown-content">
+              <li><a class="link" href="./character-generator"></a></li>
+              <!-- Add more generator links here -->
+            </ul>
+          </div>
+        </li>
+        
+        <li class="dropdown" class="link" href="./generators">
+          <summary class="dropbtn">Resources ⏷</summary>
+          <div class="dropdown-container">
+            <ul class="dropdown-content">
+              <li><a class="link" href="./resources/brandon-sanderson/writing-lectures-2020">Sci-Fi and Fantasy Writing Lectures</a></li>
+              <!-- Add more generator links here -->
+            </ul>
+          </div>
+        </li>
       </ul>
       <ul class="header-options-right">
-        <img src="./images/light-mode.png" class="icon-button">
+        <li><a class="link" href="./about">About</a></li>
+        <li><img src="./images/light-mode.png" class="icon-button"></li>
       </ul>
     </nav>
   </header>
   
+  <!--BODY-->
   <div class="centered-container">
-    <section class="hero-section" style="background-image: url(./images/hero_banner_dark.png); background-position: center; background-size: auto 110%; box-shadow: inset 0px 0px 10px 1px rgba(0,0,0,0.5);">
+    <section class="hero-section" style="background-image: url(./images/hero_banner_dark.png);">
       <h2>Welcome to Quillab</h2>
       <p>Unleash your creativity with our suite of powerful tools and generators.</p>
       <a class="large-button-link" href="./about">Learn More</a>
@@ -60,7 +79,6 @@
     </section>
   
     <section class="testimonial-section">
-      <iframe width="1120" height="630" src="https://www.youtube.com/embed/Tfe6cNlrG0c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>      <h2>What Our Users Say</h2>
       <div class="testimonial">
         <blockquote>"Quillab has revolutionized my storytelling process. The character generator helped me breathe life into my protagonists and villains, making my stories more engaging than ever."</blockquote>
         <cite>John Doe, Author</cite>
@@ -75,13 +93,13 @@
       <h2>Stay Updated</h2>
       <p>Subscribe to our newsletter to receive the latest updates, new generator releases, and exclusive offers.</p>
       <form class="newsletter-form">
-        <input type="email" placeholder="Enter your email" required>
+        <input type="email" placeholder="Doesn't Actually do Anything don't use rn" required>
         <button type="submit">Subscribe</button>
       </form> 
     </section>
   </div>
 
-<footer class="footer">
+<footer>
   &copy; 2023 Quillab. All rights reserved.
 </footer>
 </body>
