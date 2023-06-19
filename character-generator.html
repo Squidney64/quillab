@@ -60,64 +60,42 @@
   <div class="container">
 
     <div class="box-container">
-      <h1 class="page-title">Generation Options</h1>
+      <h2>Generation Options</h2>
+        <button onclick="generateAll()" style="margin: 2px 0 5px;">Generate All</button>
+    
+      <h3>General</h3>
+        <button onclick="generateName()" style="margin: 2px 0 5px;">Name</button>
+        <button onclick="generateGender()" style="margin: 2px 0 5px;">Gender/Sexuality</button>
+        <button onclick="generatePhysicalTraits()" style="margin: 2px 0 5px;">Physical Traits</button>
+    
+      <h3>Personality</h3>
+        <button onclick="generatePersonalityTraits()" style="margin: 2px 0 5px;">Personality Traits</button>
+        <button onclick="generateBeliefs()" style="margin: 2px 0 5px;">Beliefs</button>
+        <button onclick="generateFlaws()" style="margin: 2px 0 5px;">Flaws</button>
 
-      <div class="category">
-        <button onclick="generateBackground()">Background</button>
-      </div>
-    
-      <h2>General</h2>
-
-      <div class="category">
-        <button onclick="generateName()">Name</button>
-      </div>
-    
-      <div class="category">
-        <button onclick="generatePhysicalTraits()">Physical Traits</button>
-      </div>
-    
-      <h2>Personality</h2>
-    
-      <div class="category">
-        <button onclick="generatePersonalityTraits()">Personality Traits</button>
-      </div>
-    
-      <div class="category">
-        <button onclick="generateBeliefs()">Beliefs</button>
-      </div>
-    
-      <div class="category">
-        <button onclick="generateFlaws()">Flaws</button>
-      </div>
-    
-      <h2>History</h2>
-
-      <div class="category">
-        <button onclick="generateRelationships()">Relationships</button>
-      </div>
-
-      <div class="category">
-        <button onclick="generateOccupation()">Occupation</button>
-      </div>
-
-      <div class="category">
-        <button onclick="generateBackground()">Background</button>
-      </div>
+      <h3>History</h3>
+        <button onclick="generateOccupation()" style="margin: 2px 0 5px;">Occupation</button>
+        <button onclick="generateRelationships()" style="margin: 2px 0 5px;">Relationships</button>
+        <button onclick="generateBackground()" style="margin: 2px 0 5px;">Background</button>
     </div>
 
     <div class="box-container-wide">
       <h1 id="resultName">New Character</h1>
-      <div class="result-item">
+      <h3>Gender and Sexuality</h3>
+        <p id="resultGender"></p>
+      <h3>Physical Traits</h3>
         <p id="resultPhysicalTraits"></p>
-      </div>
-      <div class="result-item">
+      <h3>Personality Traits</h3>
         <p id="resultPersonalityTraits"></p>
+      <h3>Beliefs</h3>
         <p id="resultBeliefs"></p>
+      <h3>Flaws</h3>
         <p id="resultFlaws"></p>
-      </div>
-      <div class="result-item">
-        <p id="resultRelationships"></p>
+      <h3>Occupation</h3>
         <p id="resultOccupation"></p>
+      <h3>Relationships</h3>
+        <p id="resultRelationships"></p>
+      <h3>Background</h3>
         <p id="resultBackground"></p>
       </div>
     </div>
