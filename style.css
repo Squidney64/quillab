@@ -160,38 +160,17 @@ header h1:hover {
 █░▀░█ █▀█ █ █░▀█   █▄▄ █▄█ █░▀█ ░█░ ██▄ █░▀█ ░█░
 */
 
-.container,
-.centered-container {
-  justify-content: center;
-  text-align: center;
-  padding-left: 10%;
-  padding-right: 10%;
-  padding-top: 80px;
-  padding-bottom: 10px;
-  justify-content: space-between;
-}
-
-
-.container {
-  display: flex;
-}
-
-.centered-container {
-  max-width: 80%;
-}
-
-.category {
-  margin-bottom: 20px;
-}
-
 h1,
 h2,
 h3,
 h4,
 h5,
-h6,
-p {
+h6 {
   color: var(--text);
+}
+
+p {
+  color: var(--dim-text);
 }
 
 h1 {
@@ -204,6 +183,7 @@ h1 {
 
 h2 {
   /* Unique style for h2 */
+  margin-bottom: 20px;
   font-size: 28px;
   font-family: 'Open Sans', sans-serif;
 }
@@ -241,12 +221,75 @@ p {
   padding: 20px;
 }
 
+/* Links */
+a {
+  color: var(--text);
+  text-decoration: none;
+}
+
+a.anchor {
+  display: block;
+  position: relative;
+  top: -100px;
+  visibility: hidden;
+}
+
+.link a {
+  color: var(--text);
+  text-decoration: none;
+}
+
+.link a:hover {
+  color: var(--text-hover);
+}
+
+/* Lists */
+
+ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+ol {
+  list-style-type: decimal;
+  padding-left: 20px;
+}
+
+li {
+  margin-bottom: 5px;
+  text-decoration: none;
+}
+
+.container,
+.centered-container {
+  justify-content: center;
+  text-align: center;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 80px;
+  padding-bottom: 10px;
+  justify-content: space-between;
+}
+
+
+.container {
+  display: flex;
+}
+
+.centered-container {
+  max-width: 80%;
+}
+
+.category {
+  margin-bottom: 20px;
+}
+
 /* Buttons */
 .button-link,
 .large-button-link,
 button {
   font-size: 14px;
-  margin: 10px 20px;
+  margin: 30px 20px;
   padding: 10px 20px;
   background-color: var(--button-background);
   color: var(--text);
@@ -326,8 +369,8 @@ footer {
 .box-container-wide,
 .box-container-left,
 .box-container-right {
-  margin: 10px;
-  padding: 20px;
+  margin: 0 10px 30px;
+  padding: 40px;
   border: none;
   border-radius: 5px;
   background-color: var(--section-background);
@@ -356,6 +399,38 @@ footer {
   text-align: right;
 }
 
+/* Containers */
+
+.split-container {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.section-left {
+  width: 33%;
+  float: left;
+  margin: 0 10px 30px;
+  padding: 40px;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--section-background);
+  justify-content: space-between;
+  box-shadow: 0px 10px 5px -5px rgba(0,0,0,0.2);
+}
+
+.section-right {
+  width: 66%;
+  float: right;
+  margin: 0 10px 30px;
+  padding: 40px;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--section-background);
+  justify-content: space-between;
+  box-shadow: 0px 10px 5px -5px rgba(0,0,0,0.2);
+}
+
 /* Results Container */
 .results {
   margin-top: 30px;
@@ -371,45 +446,6 @@ footer {
 
 .result-item p {
   margin: 0;
-}
-
-/* Links */
-a {
-  color: var(--text);
-  text-decoration: none;
-}
-
-a.anchor {
-  display: block;
-  position: relative;
-  top: -100px;
-  visibility: hidden;
-}
-
-.link a {
-  color: var(--text);
-  text-decoration: none;
-}
-
-.link a:hover {
-  color: var(--text-hover);
-}
-
-/* Lists */
-
-ul {
-  list-style-type: disc;
-  padding-left: 20px;
-}
-
-ol {
-  list-style-type: decimal;
-  padding-left: 20px;
-}
-
-li {
-  margin-bottom: 5px;
-  text-decoration: none;
 }
 
 /* Images */
@@ -471,7 +507,7 @@ textarea {
 /* Hero Section */
 .hero-section {
   text-align: center;
-  margin: 10px;
+  margin: 30px 10px;
   padding: 80px 0;
   padding-top: 150px;
   background-color: var(--button-active);
@@ -499,10 +535,11 @@ textarea {
   display: flex;
   justify-content: space-around;
   color: var(--text);
-  margin: 10px 0;
-  padding: 10px 0;
+  margin: 0 0 30px;
+  padding: 0 0 10px;
 }
 
+.feature-card-link,
 .feature-card {
   text-align: center;
   padding: 50px 20px;
@@ -512,18 +549,27 @@ textarea {
   background-color: var(--section-background);
   box-shadow: 0px 10px 5px -5px rgba(0,0,0,0.2);
   justify-content: space-between;
+}
+
+.feature-card {
+  cursor: auto;
+}
+
+.feature-card-link {
   cursor: pointer;
 }
 
-.feature-card:hover h3 {
+.feature-card-link:hover h3 {
   transform: scale(1.15);
 }
 
+.feature-card-link h3,
 .feature-card h3 {
   font-size: 24px;
   margin-bottom: 20px;
 }
 
+.feature-card-link p,
 .feature-card p {
   font-size: 16px;
   color: var(--dim-text);
