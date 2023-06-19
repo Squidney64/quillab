@@ -1,5 +1,34 @@
 /* Global Styles */
+
+:root {
+  --background: #1f1f1f;
+  --dark-background: #121212;
+  --text: #ffffff;
+  --dim-text: #cccccc;
+  --text-hover: #999999;
+  --section-background: #2a2a2a;
+  --button-background: #4a4a4a;
+  --button-hover: #666666;
+  --button-active: #333333;
+  --border: #555555;
+}
+/*
+.light-mode {
+  --background: #f2f2f2;
+  --dark-background: #e5e5e5;
+  --text: #111111;
+  --dim-text: #777777;
+  --text-hover: #555555;
+  --section-background: #ffffff;
+  --button-background: #cccccc;
+  --button-hover: #bbbbbb;
+  --button-active: #aaaaaa;
+  --border: #999999;
+}
+*/
+
 *{
+  transition: all 0.15s ease;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -13,8 +42,8 @@ body {
   align-items: center;
   align-self: center;
   min-height: 100vh;
-  background-color: #1f1f1f;
-  color: #ffffff;
+  background-color: var(--background);
+  color: var(--text);
 }
 
 /* 
@@ -30,14 +59,14 @@ header {
   width: 100%;
   height: 50px;
   z-index: 5;
-  background-color: #2a2a2a;
+  background-color: var(--section-background);
   padding: 10px;
   box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.2);
 }
 
 header h1 {
   font-size: 24px;
-  color: #ffffff;
+  color: var(--text);
   margin: 0;
 }
 
@@ -82,14 +111,13 @@ header nav {
 
 header a:hover,
 header h1:hover {
-  color: #999999;
+  color: var(--text-hover);
 }
 
 /* Dropdown Stuffz */
 
 .dropdown {
   cursor: pointer;
-  transition: all 0.15s ease;
 }
 
 .dropdown-container {
@@ -109,7 +137,7 @@ header h1:hover {
   z-index: 15;
   border: none;
   border-radius: 5px;
-  background-color: #4a4a4a;
+  background-color: var(--button-background);
   box-shadow: 0px 10px 5px -5px rgba(0,0,0,0.2);
 }
 
@@ -118,7 +146,7 @@ header h1:hover {
 }
 
 .dropdown:hover {
-  color: #999999;
+  color: var(--text-hover);
 }
 
 .dropdown-container li {
@@ -163,8 +191,7 @@ h4,
 h5,
 h6,
 p {
-  color: #ffffff;
-  transition: all 0.15s ease;
+  color: var(--text);
 }
 
 h1 {
@@ -221,12 +248,11 @@ button {
   font-size: 14px;
   margin: 10px 20px;
   padding: 10px 20px;
-  background-color: #4a4a4a;
-  color: #ffffff;
+  background-color: var(--button-background);
+  color: var(--text);
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  transition: all 0.15s ease;
   box-shadow: 0px 10px 5px -5px rgba(0,0,0,0.2);
   text-decoration: none;
 }
@@ -239,7 +265,7 @@ button {
 .button-link:hover,
 .large-button-link:hover,
 button:hover {
-  background-color: #666666;
+  background-color: var(--button-hover);
 }
 
 .button-link:focus,
@@ -251,20 +277,40 @@ button:focus {
 .button-link:active,
 .large-button-link:active,
 button:active {
-  background-color: #333333;
+  background-color: var(--button-active);
   box-shadow: inset 0px 0px 5px 1px rgba(0,0,0,0.2);
 }
 
 .icon-button {
+  margin: 0;
+  padding: 0;
   width: 28px;
-  transition: all 0.15s ease;
-  filter: invert(1);
+  filter: invert(0.5);
+  cursor: pointer;
+  text-decoration: none;
+  box-shadow: none;
+  background-color: none;
 }
- 
+/*
 .icon-button:hover {
   filter: invert(0.576);
+}*/
+/*
+.light-mode .icon-button {
+  margin: 0;
+  padding: 0;
+  width: 28px;
+  filter: invert(0);
+  cursor: pointer;
+  text-decoration: none;
+  box-shadow: none;
+  background-color: none;
 }
-
+ 
+.light-mode .icon-button:hover {
+  filter: invert(0.424);
+}
+*/
 /* Footer */
 footer {
   font-size: 12px;
@@ -284,7 +330,7 @@ footer {
   padding: 20px;
   border: none;
   border-radius: 5px;
-  background-color: #2a2a2a;
+  background-color: var(--section-background);
   justify-content: space-between;
   box-shadow: 0px 10px 5px -5px rgba(0,0,0,0.2);
 }
@@ -329,9 +375,8 @@ footer {
 
 /* Links */
 a {
-  color: #ffffff;
+  color: var(--text);
   text-decoration: none;
-  transition: color 0.15s ease;
 }
 
 a.anchor {
@@ -342,12 +387,12 @@ a.anchor {
 }
 
 .link a {
-  color: #ffffff;
+  color: var(--text);
   text-decoration: none;
 }
 
 .link a:hover {
-  color: #999999;
+  color: var(--text-hover);
 }
 
 /* Lists */
@@ -387,8 +432,8 @@ table {
 }
 
 th {
-  background-color: #1f1f1f;
-  color: #ffffff;
+  background-color: var(--background);
+  color: var(--text);
   padding: 10px;
   text-align: left;
 }
@@ -408,9 +453,9 @@ select {
   width: 100%;
   padding: 10px;
   border-radius: 5px;
-  border: 1px solid #4a4a4a;
-  background-color: #1f1f1f;
-  color: #ffffff;
+  border: 1px solid var(--button-background);
+  background-color: var(--background);
+  color: var(--text);
 }
 
 input[type="checkbox"],
@@ -429,8 +474,8 @@ textarea {
   margin: 10px;
   padding: 80px 0;
   padding-top: 150px;
-  background-color: #333333;
-  color: #ffffff;
+  background-color: var(--button-active);
+  color: var(--text);
   background-position: center;
   background-size: auto 105%;
   box-shadow: 0px 10px 5px -5px rgba(0,0,0,0.2);
@@ -445,7 +490,7 @@ textarea {
 
 .hero-section p {
   font-size: 18px;
-  color: #cccccc;
+  color: var(--dim-text);
   margin-bottom: 40px;
 }
 
@@ -453,7 +498,7 @@ textarea {
 .feature-section {
   display: flex;
   justify-content: space-around;
-  color: #ffffff;
+  color: var(--text);
   margin: 10px 0;
   padding: 10px 0;
 }
@@ -464,7 +509,7 @@ textarea {
   margin: 10px;
   border-radius: 5px;
   width: 100%;
-  background-color: #2a2a2a;
+  background-color: var(--section-background);
   box-shadow: 0px 10px 5px -5px rgba(0,0,0,0.2);
   justify-content: space-between;
   cursor: pointer;
@@ -481,19 +526,19 @@ textarea {
 
 .feature-card p {
   font-size: 16px;
-  color: #cccccc;
+  color: var(--dim-text);
 }
 
 /* Testimonial Section */
 .testimonial-section {
   text-align: center;
-  background-color: #333333;
-  color: #ffffff;
+  background-color: var(--button-active);
+  color: var(--text);
   margin: 10px;
   padding: 20px;
   border: none;
   border-radius: 5px;
-  background-color: #2a2a2a;
+  background-color: var(--section-background);
   justify-content: space-between;
   box-shadow: 0px 10px 5px -5px rgba(0,0,0,0.2);
 }
@@ -509,21 +554,21 @@ textarea {
 
 .testimonial blockquote {
   font-size: 18px;
-  color: #cccccc;
+  color: var(--dim-text);
   margin: 20px 0;
 }
 
 .testimonial cite {
   font-style: italic;
-  color: #999999;
+  color: var(--text-hover);
 }
 
 /* Newsletter Section */
 .newsletter-section {
   text-align: center;
   padding: 80px 0;
-  background-color: #1f1f1f;
-  color: #ffffff;
+  background-color: var(--background);
+  color: var(--text);
 }
 
 .newsletter-section h2 {
@@ -533,7 +578,7 @@ textarea {
 
 .newsletter-section p {
   font-size: 18px;
-  color: #cccccc;
+  opacity: 75%;
   margin-bottom: 40px;
 }
 
@@ -547,10 +592,10 @@ textarea {
 .newsletter-form input[type="email"] {
   padding: 10px;
   font-size: 16px;
-  background-color: #1f1f1f;
-  border: 1px solid #555555;
+  background-color: var(--background);
+  border: 1px solid var(--border);
   border-radius: 5px;
-  color: #ffffff;
+  color: var(--text);
 }
 
 /* width */
@@ -560,13 +605,13 @@ textarea {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #121212;
+  background: var(--dark-background);
   box-shadow: 0px 10px 5px -5px rgba(0,0,0,0.2);
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #555555;
+  background: var(--border);
   border-radius: 10px;
 }
 

@@ -16,7 +16,7 @@
         <li><a class="link" href="./"><h1>quillab</h1></a></li>
 
         <li class="dropdown" class="link" href="./generators">
-          <summary class="dropbtn">Generators ⏷</summary>
+          <summary>Generators ⏷</summary>
           <div class="dropdown-container">
             <ul class="dropdown-content">
               <li><a class="link" href="./character-generator">Character Generator</a></li>
@@ -26,7 +26,7 @@
         </li>
         
         <li class="dropdown" class="link" href="./generators">
-          <summary class="dropbtn">Tools ⏷</summary>
+          <summary>Tools ⏷</summary>
           <div class="dropdown-container">
             <ul class="dropdown-content">
               <li><a class="link" href="./character-generator"></a></li>
@@ -36,7 +36,7 @@
         </li>
         
         <li class="dropdown" class="link" href="./generators">
-          <summary class="dropbtn">Resources ⏷</summary>
+          <summary>Resources ⏷</summary>
           <div class="dropdown-container">
             <ul class="dropdown-content">
               <li><a class="link" href="./resources/brandon-sanderson/writing-lectures-2020">Sci-Fi and Fantasy Writing Lectures</a></li>
@@ -47,16 +47,22 @@
       </ul>
       <ul class="header-options-right">
         <li><a class="link" href="./about">About</a></li>
-        <li><img src="./images/light-mode.png" class="icon-button"></li>
+        <li><img src="./images/light-mode.png" class="icon-button" onclick="toggleTheme()"></li>
       </ul>
     </nav>
+    <script>
+      function toggleTheme() {
+        var element = document.body;
+        element.classList.toggle("light-mode");
+      }
+    </script>
   </header>
   
   <!--BODY-->
   <div class="centered-container">
     <section class="hero-section" style="background-image: url(./images/hero_banner_dark.png);">
-      <h2>Welcome to Quillab</h2>
-      <p>Unleash your creativity with our suite of powerful tools and generators.</p>
+      <h2 style="color: white;">Welcome to Quillab</h2>
+      <p style="color: white;">Unleash your creativity with our suite of powerful tools and generators.</p>
       <a class="large-button-link" href="./about">Learn More</a>
     </section>
   

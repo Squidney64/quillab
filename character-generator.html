@@ -14,7 +14,7 @@
         <li><a class="link" href="./"><h1>quillab</h1></a></li>
 
         <li class="dropdown" class="link" href="./generators">
-          <summary class="dropbtn">Generators ⏷</summary>
+          <summary>Generators ⏷</summary>
           <div class="dropdown-container">
             <ul class="dropdown-content">
               <li><a class="link" href="./character-generator">Character Generator</a></li>
@@ -24,7 +24,7 @@
         </li>
         
         <li class="dropdown" class="link" href="./generators">
-          <summary class="dropbtn">Tools ⏷</summary>
+          <summary>Tools ⏷</summary>
           <div class="dropdown-container">
             <ul class="dropdown-content">
               <li><a class="link" href="./character-generator"></a></li>
@@ -34,7 +34,7 @@
         </li>
         
         <li class="dropdown" class="link" href="./generators">
-          <summary class="dropbtn">Resources ⏷</summary>
+          <summary>Resources ⏷</summary>
           <div class="dropdown-container">
             <ul class="dropdown-content">
               <li><a class="link" href="./resources/brandon-sanderson/writing-lectures-2020">Sci-Fi and Fantasy Writing Lectures</a></li>
@@ -45,9 +45,15 @@
       </ul>
       <ul class="header-options-right">
         <li><a class="link" href="./about">About</a></li>
-        <li><img src="./images/light-mode.png" class="icon-button"></li>
+        <li><img src="./images/light-mode.png" class="icon-button" onclick="toggleTheme()"></li>
       </ul>
     </nav>
+    <script>
+      function toggleTheme() {
+        var element = document.body;
+        element.classList.toggle("light-mode");
+      }
+    </script>
   </header>
   
   <!--BODY-->
