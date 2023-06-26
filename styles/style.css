@@ -10,7 +10,7 @@
   --button-background: #4a4a4a;
   --button-hover: #666666;
   --border: #555555;
-  --accent: #dd5410;
+  --accent: #f09328;
 }
 
 .light-mode {
@@ -23,7 +23,7 @@
   --button-background: #c2c2c2;
   --button-hover: #999999;
   --border: #aaaaaa;
-  --accent: #ff5722;
+  --accent: #f09328;
 }
 
 *{

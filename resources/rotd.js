@@ -55,7 +55,7 @@ var resources = [
       series: "Writing Sci-Fi and Fantasy",
       title: "Short Stories",
       content: "Short stories are the focus of this lecture, as a guest, Mary Robinette Kowal provides guidance and tips for crafting compelling narratives in a condensed format.",
-      author: "Brandon Sanderson",
+      author: "Mary Robinette Kowal",
       link: "./resources/brandon-sanderson/writing-lectures-2020#7",
       type: "video"
     },
