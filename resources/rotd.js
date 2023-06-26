@@ -5,10 +5,20 @@
 var resources = [
     {
       series: "Writing Sci-Fi and Fantasy",
+      title: "My Philosophy on Teaching Writing",
+      content: "Brandon Sanderson speaks here about what he's found to be the best way to teach students how to write science fiction and fantasy.",
+      author: "Brandon Sanderson",
+      link: "./resources/brandon-sanderson/writing-lectures-2020#0",
+      thumbnail: "https://i.ytimg.com/vi_webp/0cf-qdZ7GbA/sddefault.webp",
+      type: "video"
+    },
+    {
+      series: "Writing Sci-Fi and Fantasy",
       title: "Introduction",
       content: "In the introduction lecture, Brandon Sanderson sets the stage for the series, providing an overview of the topics to be covered.",
       author: "Brandon Sanderson",
       link: "./resources/brandon-sanderson/writing-lectures-2020#1",
+      thumbnail: "https://i.ytimg.com/vi/-6HOdHEeosc/hqdefault.jpg",
       type: "video"
     },
     {
@@ -17,6 +27,7 @@ var resources = [
       content: "Sanderson delves into the intricacies of plotting in the first part of the plot lecture.",
       author: "Brandon Sanderson",
       link: "./resources/brandon-sanderson/writing-lectures-2020#2",
+      thumbnail: "https://i.ytimg.com/vi/jrIogch5DBU/sddefault.jpg?sqp=-oaymwEmCIAFEOAD8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGGUgZShlMA8=&rs=AOn4CLB3DcVeb3RHCOjvCVypKgC3wmE6-Q",
       type: "video"
     },
     {
@@ -25,6 +36,7 @@ var resources = [
       content: "Continuing from the previous lecture, Sanderson explores plot development further in the second part of the plot lecture.",
       author: "Brandon Sanderson",
       link: "./resources/brandon-sanderson/writing-lectures-2020#3",
+      thumbnail: "https://i.ytimg.com/vi/-6HOdHEeosc/hqdefault.jpg",
       type: "video"
     },
     {
@@ -33,6 +45,7 @@ var resources = [
       content: "Sanderson discusses viewpoint in writing and engages in a Q&A session with the audience.",
       author: "Brandon Sanderson",
       link: "./resources/brandon-sanderson/writing-lectures-2020#4",
+      thumbnail: "https://i.ytimg.com/vi/-6HOdHEeosc/hqdefault.jpg",
       type: "video"
     },
     {
@@ -41,6 +54,7 @@ var resources = [
       content: "Worldbuilding takes the spotlight in the first part of the worldbuilding lecture, as Sanderson shares insights and techniques.",
       author: "Brandon Sanderson",
       link: "./resources/brandon-sanderson/writing-lectures-2020#5",
+      thumbnail: "https://i.ytimg.com/vi/-6HOdHEeosc/hqdefault.jpg",
       type: "video"
     },
     {
@@ -49,6 +63,7 @@ var resources = [
       content: "Sanderson continues his exploration of worldbuilding in the second part of the lecture, delving into additional aspects and considerations.",
       author: "Brandon Sanderson",
       link: "./resources/brandon-sanderson/writing-lectures-2020#6",
+      thumbnail: "https://i.ytimg.com/vi/-6HOdHEeosc/hqdefault.jpg",
       type: "video"
     },
     {
@@ -57,6 +72,7 @@ var resources = [
       content: "Short stories are the focus of this lecture, as a guest, Mary Robinette Kowal provides guidance and tips for crafting compelling narratives in a condensed format.",
       author: "Mary Robinette Kowal",
       link: "./resources/brandon-sanderson/writing-lectures-2020#7",
+      thumbnail: "https://i.ytimg.com/vi/-6HOdHEeosc/hqdefault.jpg",
       type: "video"
     },
     {
@@ -65,6 +81,7 @@ var resources = [
       content: "Sanderson addresses audience questions specifically related to worldbuilding in this Q&A session.",
       author: "Brandon Sanderson",
       link: "./resources/brandon-sanderson/writing-lectures-2020#8",
+      thumbnail: "https://i.ytimg.com/vi/-6HOdHEeosc/hqdefault.jpg",
       type: "video"
     },
     {
@@ -73,6 +90,7 @@ var resources = [
       content: "In the first part of the characters lecture, Sanderson dives into the art of developing rich and believable characters.",
       author: "Brandon Sanderson",
       link: "./resources/brandon-sanderson/writing-lectures-2020#9",
+      thumbnail: "https://i.ytimg.com/vi/-6HOdHEeosc/hqdefault.jpg",
       type: "video"
     },
     {
@@ -81,6 +99,7 @@ var resources = [
       content: "Building upon the previous lecture, Sanderson explores advanced techniques for character development in the second part of the characters lecture.",
       author: "Brandon Sanderson",
       link: "./resources/brandon-sanderson/writing-lectures-2020#10",
+      thumbnail: "https://i.ytimg.com/vi/-6HOdHEeosc/hqdefault.jpg",
       type: "video"
     },
     {
@@ -89,6 +108,7 @@ var resources = [
       content: "The characters Q&A session allows Sanderson to provide further insights and advice on crafting memorable characters.",
       author: "Brandon Sanderson",
       link: "./resources/brandon-sanderson/writing-lectures-2020#11",
+      thumbnail: "https://i.ytimg.com/vi/-6HOdHEeosc/hqdefault.jpg",
       type: "video"
     },
     {
@@ -97,6 +117,7 @@ var resources = [
       content: "Sanderson delves into the publishing process in the first part of the publishing lecture, offering guidance on navigating the industry.",
       author: "Brandon Sanderson",
       link: "./resources/brandon-sanderson/writing-lectures-2020#12",
+      thumbnail: "https://i.ytimg.com/vi/-6HOdHEeosc/hqdefault.jpg",
       type: "video"
     },
     {
@@ -105,6 +126,7 @@ var resources = [
       content: "Concluding the series, Sanderson continues his discussion on publishing, focusing on key aspects such as contracts, book covers, and marketing in the second part of the lecture.",
       author: "Brandon Sanderson",
       link: "./resources/brandon-sanderson/writing-lectures-2020#13",
+      thumbnail: "https://i.ytimg.com/vi/-6HOdHEeosc/hqdefault.jpg",
       type: "video"
     }
     // Add more resources as needed
