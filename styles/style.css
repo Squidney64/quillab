@@ -34,6 +34,9 @@
   list-style: none;
   text-decoration: none;
   transition: all 0.15s ease;
+  background-size: auto 105%;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 body {
@@ -280,10 +283,7 @@ li {
 .centered-container {
   justify-content: center;
   text-align: center;
-  padding-left: 10%;
-  padding-right: 10%;
-  padding-top: 80px;
-  padding-bottom: 10px;
+  padding: 5% 5% 80px 5%;
   justify-content: space-between;
 }
 
@@ -293,7 +293,7 @@ li {
 }
 
 .centered-container {
-  max-width: 80%;
+  max-width: 100%;
 }
 
 .category {
@@ -633,7 +633,6 @@ textarea {
   padding-top: 150px;
   color: var(--text);
   background-position: center;
-  background-size: auto 105%;
   box-shadow: 0px 10px 5px -5px rgba(0,0,0,0.2);
   border: none;
   border-radius: 5px;
@@ -669,6 +668,14 @@ textarea {
   background-color: var(--section-background);
   box-shadow: 0px 10px 5px -5px rgba(0,0,0,0.2);
   justify-content: space-between;
+  background-blend-mode: multiply;
+}
+
+.feature-card-link:hover,
+.feature-card:hover {
+  background-size: auto 110%;
+  transform: scale(1.05);
+  box-shadow: 0px 20px 15px -5px rgba(0,0,0,0.3);
 }
 
 .feature-card {

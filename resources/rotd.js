@@ -36,7 +36,7 @@ var resources = [
       content: "Continuing from the previous lecture, Sanderson explores plot development further in the second part of the plot lecture.",
       author: "Brandon Sanderson",
       link: "./resources/brandon-sanderson/writing-lectures-2020#3",
-      thumbnail: "https://i.ytimg.com/vi/-6HOdHEeosc/hqdefault.jpg",
+      thumbnail: "https://i.ytimg.com/vi_webp/Qgbsz7Gnrd8/maxresdefault.webp",
       type: "video"
     },
     {
@@ -172,6 +172,9 @@ var resources = [
   
     // Update the resource link
     document.getElementById('rotd-link').setAttribute('href', resource.link);
+  
+    // Update the resource link
+    document.getElementById('rotd').style.backgroundImage = "url(" + resource.thumbnail + ")";
 
     // Update the resource type
     if (resource.type == "video") {
